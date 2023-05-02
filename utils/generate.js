@@ -1,6 +1,6 @@
-const Circle = require("../Shapes/circle");
-const Square = require("../Shapes/square");
-const Triangle = require("../Shapes/triangle");
+const Circle = require("../lib/circle");
+const Square = require("../lib/square");
+const Triangle = require("../lib/triangle");
 
 function generate(data) {
   let shape = undefined;
