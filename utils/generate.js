@@ -1,8 +1,8 @@
 const Circle = require("../Shapes/circle");
 const Square = require("../Shapes/square");
-const Triangle = require("../Shapes/trianle");
+const Triangle = require("../Shapes/triangle");
 
-function generateLogo(data) {
+function generate(data) {
   let shape = undefined;
   if (data.shape === "Circle") {
     shape = new Circle(data.background_color, data.text, data.text_color);
@@ -14,4 +14,4 @@ function generateLogo(data) {
   return shape.render();
 }
 
-module.exports = generateLogo;
+module.exports = generate;

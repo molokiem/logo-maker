@@ -28,8 +28,8 @@ const questions = [
 ];
 
 function writeToFile(fileName, data) {
-  var answers = generateLogo(data);
-  fs.writeFile(fileName, answers, (error) => {
+  var answers = generate(data);
+  fs.writeFile(fileName, answers, function (err) {
     if (err) return console.log(err);
     else {
       return console.log("Logo generated successfully");

@@ -5,7 +5,7 @@ class Shape {
     this.textColor = textColor;
   }
 
-  setColor(color) {
+  setBackgroundColor(color) {
     this.backgroundColor = backgroundColor;
   }
 
